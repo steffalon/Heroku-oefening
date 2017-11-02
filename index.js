@@ -27,6 +27,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/second', function(request, response) {
+  response.render('pages/second');
+});
+
 app.get('/cool', function(request, response) {
   response.send(cool());
 });
